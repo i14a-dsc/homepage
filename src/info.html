@@ -1,0 +1,176 @@
+<html class="mdui-theme-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <title>I14A Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      mdui.setColorScheme("#FF8C00");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=2" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <mdui-top-app-bar>
+      <mdui-button-icon id="menu" icon="menu"></mdui-button-icon>
+      <mdui-top-app-bar-title>Homepage</mdui-top-app-bar-title>
+      <div style="flex-grow: 1"></div>
+      <mdui-tooltip content="お兄ちゃんはおしまい!">
+        <mdui-button-icon
+          id="transgender"
+          icon="transgender"
+        ></mdui-button-icon>
+      </mdui-tooltip>
+    </mdui-top-app-bar>
+
+    <mdui-navigation-drawer
+      open="false"
+      id="drawer"
+      close-on-esc
+      close-on-overlay-click
+      contained
+      modal
+    >
+      <h1>Drawer</h1>
+      <mdui-list>
+        <mdui-list-item href="/">Home</mdui-list-item>
+        <mdui-list-item href="/info">Info</mdui-list-item>
+        <mdui-list-item href="/link">Link</mdui-list-item>
+      </mdui-list>
+    </mdui-navigation-drawer>
+    <mdui-layout>
+      <mdui-layout-main>
+        <h1>Profiles</h1>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Github"
+          content="070ry"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://avatars.githubusercontent.com/u/68803331"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Discord"
+          content="@i14a"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://images-ext-1.discordapp.net/external/qN8avEXrsaNo8w8RN7UdLXQbMH57Dn7ScYXEwrw6l_4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1072283404722257950/f0e9c68c91d116714868d4af97dafa56.png?format=webp&quality=lossless&width=64&height=64"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Discord"
+          content="@070ry"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://images-ext-1.discordapp.net/external/wocLi41Dh5UOqETb-P3WXxP4INl5YKb8gTVmqi9-wRI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/880410653058289685/069c9b504766fbd51727d4d61b8b4a12.png?format=webp&quality=lossless&width=64&height=64"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Discord"
+          content="@sakayanagialice"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://cdn.discordapp.com/avatars/649922410103046145/1943d543530ae1e5ae2b39821952bd4a.webp?size=64"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="X(formerly Twitter)"
+          content="@1u0704"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://pbs.twimg.com/profile_images/1766058520745803776/mda2FEpL_200x200.jpg"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Guilded"
+          content="/u/I14A"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://cdn.gilcdn.com/UserAvatar/9d964e4b4e17e58c042633071937fd60-Small.webp"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Misskey"
+          content="@I14A@misskey.io"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://proxy.misskeyusercontent.jp/avatar.webp?url=https%3A%2F%2Fmedia.misskeyusercontent.jp%2Fmisskey%2Feb514b1a-6005-4b39-9a3a-6ece4afcb748.png&avatar=1"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Xbox"
+          content="ryousuke0704"
+          ><mdui-avatar
+            loading="lazy"
+            src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW8ke8ralOdP9BGd4wzwl0MKiS_22MVIPEwJP9TvepJ8uvpljwlaOqpr7r5iffC.z25Jbxozf7tHYe8zL9YIErtpoX0T_OBsUz2XNs.smQtZPqRY79A8AvC4hYjS.Y1thrH5ltVbv0So0fV9zg_hS90Xdg9B.EnUBcBa.l0snPAcS&format=jpg&h=64&w=64"
+          ></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="Xbox"
+          content="I14A"
+        >
+          <mdui-avatar
+            loading="lazy"
+            src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW3apWESZjav65Yncai8aRmWL5wD_dXiCeIhr2I61i4BQuu5DlEJ8AiopIHe7tpv.DSODD.gI5v28QP__46Y8X.cHT9906ZAwekXyHE1z4oBnnHf4u1M5BoC02Ak2SBKdEDq4mpRiCpCHvwUoAeA88FmFCVdUhWOcXSqdDwxjVmBx&format=jpg&h=64&w=64"
+          ></mdui-avatar>
+        </mdui-tooltip>
+      </mdui-layout-main>
+    </mdui-layout>
+    <mdui-navigation-bar value="info">
+      <mdui-navigation-bar-item href="/" icon="home" value="home" select>
+        Home
+      </mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="person" value="info">
+        Info
+      </mdui-navigation-bar-item>
+      <mdui-navigation-bar-item href="/link" icon="link" value="link">
+        Link
+      </mdui-navigation-bar-item>
+    </mdui-navigation-bar>
+  </body>
+</html>

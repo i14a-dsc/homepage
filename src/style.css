@@ -1,0 +1,45 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+mdui-text-field#search {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+mdui-button {
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+mdui-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+#drawer h1 {
+  margin-top: 40px;
+  margin-left: 16px;
+}
+#drawer mdui-button {
+  vertical-align: text-bottom;
+  margin-left: 30px;
+  width: 160px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+mdui-layout-main {
+  position: relative;
+  margin: auto 0;
+  text-align: center;
+}
+
+mdui-avatar {
+  width: 64px;
+  height: 64px;
+}/*# sourceMappingURL=style.css.map */
