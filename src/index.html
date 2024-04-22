@@ -35,8 +35,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css?v=2" />
+    <script src="index.js"></script>
+    <script src="nav.js"></script>
+    <style>
+      mdui-button#dialog-close {
+        margin-top: 16px;
+      }
+    </style>
   </head>
   <body>
     <mdui-top-app-bar>
@@ -72,17 +78,23 @@
     </mdui-navigation-drawer>
     <mdui-layout>
       <mdui-layout-main>
+        <mdui-dialog close-on-esc close-on-overlay-click id="dialog"
+          >Please input keyword to input box.
+          <mdui-button id="dialog-close">Ok</mdui-button>
+        </mdui-dialog>
+
         <mdui-text-field
           id="search"
           variant="outlined"
           label="Input"
+          placeholder="Type here and hit enter to search"
         ></mdui-text-field>
         <mdui-tooltip
           variant="rich"
           headline="Powered by Google"
           placement="bottom"
         >
-          <mdui-button id="search-button">SEARCH</mdui-button>
+          <mdui-button id="search-button" icon="search">SEARCH</mdui-button>
         </mdui-tooltip>
         <mdui-button id="fullscreen" icon="fullscreen">FULLSCREEN</mdui-button>
       </mdui-layout-main>
