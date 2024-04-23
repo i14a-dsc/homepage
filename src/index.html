@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html class="mdui-theme-auto">
-  <head>
+  <head lang="ja">
     <meta charset="UTF-8" />
-    <title>Example Website</title>
+    <title>I14A Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
@@ -49,7 +50,7 @@
       <mdui-button-icon id="menu" icon="menu"></mdui-button-icon>
       <mdui-top-app-bar-title>Homepage</mdui-top-app-bar-title>
       <div style="flex-grow: 1"></div>
-      <mdui-tooltip
+      <m-dui-tooltip
         variant="rich"
         content="お兄ちゃんはおしまい!"
         placement="bottom-left"
@@ -58,9 +59,8 @@
           id="transgender"
           icon="transgender"
         ></mdui-button-icon>
-      </mdui-tooltip>
+      </m-dui-tooltip>
     </mdui-top-app-bar>
-
     <mdui-navigation-drawer
       open="false"
       id="drawer"
@@ -78,11 +78,10 @@
     </mdui-navigation-drawer>
     <mdui-layout>
       <mdui-layout-main>
-        <mdui-dialog close-on-esc close-on-overlay-click id="dialog"
-          >Please input keyword to input box.
+        <mdui-dialog close-on-esc close-on-overlay-click id="dialog">
+          Please input keyword to input box.
           <mdui-button id="dialog-close">Ok</mdui-button>
         </mdui-dialog>
-
         <mdui-text-field
           id="search"
           variant="outlined"
