@@ -2,7 +2,7 @@
 
 [mdui](https://www.mdui.org/)
 
-[Saas](https://sass-lang.com/)
+[Sass](https://sass-lang.com/)
 
 # Used VSCode extensions and modules
 
