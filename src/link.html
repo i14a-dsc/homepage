@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html class="mdui-theme-auto">
-  <head lang="ja">
+<html class="mdui-theme-auto" prefix="og: https://ogp.me/ns#" lang="ja">
+  <head>
     <meta charset="UTF-8" />
     <title>I14A Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="I14A Website" />
+    <meta property="og:site_name" content="I14A Website" />
+    <meta property="og:url" content="https://070ry-hp.pages.dev/" />
+    <meta
+      property="og:image"
+      content="https://070ry-hp.pages.dev/assets/icon.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@1u0704" />
+    <meta name="twitter:creator" content="@1u0704" />
+    <meta name="twitter:card" content="app" />
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     <link
@@ -83,16 +94,60 @@
         </mdui-list>
         <h2>External Services</h2>
         <mdui-list>
-          <mdui-list-item href="//www.xbox.com/ja-JP/play">
-            Cloud Gaming
-          </mdui-list-item>
-          <mdui-list-item href="//gemini.google.com">
-            Google Gemini
-          </mdui-list-item>
-          <mdui-list-item href="//mail.google.com"> Gmail </mdui-list-item>
-          <mdui-list-item href="//open.spotify.com"> Spotify </mdui-list-item>
-          <mdui-list-item href="//x.com"> X (formerly Twitter) </mdui-list-item>
-          <mdui-list-item href="//youtube.com"> YouTube </mdui-list-item>
+          <mdui-tooltip
+            headline="Cloud Gaming"
+            content="//xbox.com/ja-JP/play"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//www.xbox.com/ja-JP/play">
+              Cloud Gaming
+            </mdui-list-item>
+          </mdui-tooltip>
+          <mdui-tooltip
+            headline="Google Gemini"
+            content="//gemini.google.com"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//gemini.google.com">
+              Google Gemini
+            </mdui-list-item>
+          </mdui-tooltip>
+          <mdui-tooltip
+            headline="Gmail"
+            content="//mail.google.com"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//mail.google.com"> Gmail </mdui-list-item>
+          </mdui-tooltip>
+          <mdui-tooltip
+            headline="Spotify Web Player"
+            content="//open.spotify.com"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//open.spotify.com"> Spotify </mdui-list-item>
+          </mdui-tooltip>
+          <mdui-tooltip
+            headline="X"
+            content="//x.com"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//x.com">
+              X (formerly Twitter)
+            </mdui-list-item>
+          </mdui-tooltip>
+          <mdui-tooltip
+            headline="YouTube"
+            content="//youtube.com"
+            variant="rich"
+            placement="bottom"
+          >
+            <mdui-list-item href="//youtube.com"> YouTube </mdui-list-item>
+          </mdui-tooltip>
         </mdui-list>
       </mdui-layout-main>
     </mdui-layout>
