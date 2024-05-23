@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/070ry/zatsu/issues"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "mdui": "^2.1.1"
+  }
 }

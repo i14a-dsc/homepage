@@ -34,6 +34,10 @@ mdui-icon {
   visibility: hidden;
 }
 
+.mdui-no-overwrap {
+  overflow: hidden;
+}
+
 mdui-layout-main {
   position: relative;
   margin: auto 0;

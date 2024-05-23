@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="mdui-theme-auto" prefix="og: https://ogp.me/ns#" lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -49,9 +49,21 @@
     />
     <link rel="stylesheet" href="style.css?v=3" />
     <script src="nav.js"></script>
+    <style>
+      .mdui-big-button {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 250px;
+        height: 100px;
+        font-size: 24px;
+      }
+      .mdui-big-button[active] {
+        --shape-corner: 16px;
+      }
+    </style>
   </head>
   <body>
-    <mdui-top-app-bar>
+    <mdui-top-app-bar scroll-behavior="elevate">
       <mdui-button-icon id="menu" icon="menu"></mdui-button-icon>
       <mdui-top-app-bar-title>Homepage</mdui-top-app-bar-title>
       <div style="flex-grow: 1"></div>
@@ -83,9 +95,39 @@
       </mdui-list>
     </mdui-navigation-drawer>
     <mdui-layout>
-      <mdui-layout-main> </mdui-layout-main>
+      <mdui-layout-main>
+        <mdui-button class="mdui-big-button" variant="tonal">test</mdui-button>
+        <mdui-linear-progress></mdui-linear-progress>
+        <mdui-circular-progress
+          class="mdui-no-overwrap"
+        ></mdui-circular-progress>
+        <div
+          style="
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 70%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+          "
+        >
+          <mdui-top-app-bar
+            variant="center-aligned"
+            scroll-behavior="shrink elevate"
+            scroll-target=".target"
+          >
+            <mdui-button-icon icon="menu"></mdui-button-icon>
+            <mdui-top-app-bar-title>Title</mdui-top-app-bar-title>
+            <div style="flex-grow: 1"></div>
+            <mdui-button-icon icon="more_vert"></mdui-button-icon>
+          </mdui-top-app-bar>
+          <div class="target" style="height: 160px; overflow: auto">
+            <div style="height: 200%"></div>
+          </div>
+        </div>
+      </mdui-layout-main>
     </mdui-layout>
-    <mdui-navigation-bar value="-_-">
+    <mdui-navigation-bar value="-_-" >
       <mdui-navigation-bar-item href="/" icon="home" value="home" select>
         Home
       </mdui-navigation-bar-item>
