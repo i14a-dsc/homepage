@@ -48,6 +48,43 @@
     />
     <link rel="stylesheet" href="style.css?v=3" />
     <script src="nav.js"></script>
+    <script>
+      const icons = {
+        "#dsc-i14a":
+          "https://cdn.discordapp.com/avatars/1072283404722257950/2613b37e06e67f4d1a598919c39e836b.png?size=128",
+        "#gh-070ry": "https://avatars.githubusercontent.com/u/68803331",
+        "#dsc-070ry":
+          "https://images-ext-1.discordapp.net/external/wocLi41Dh5UOqETb-P3WXxP4INl5YKb8gTVmqi9-wRI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/880410653058289685/069c9b504766fbd51727d4d61b8b4a12.png?format=webp&quality=lossless&width=64&height=64",
+        "#dsc-sakayanagialice":
+          "https://cdn.discordapp.com/avatars/649922410103046145/1943d543530ae1e5ae2b39821952bd4a.webp?size=64",
+        "#x-1u0704":
+          "https://pbs.twimg.com/profile_images/1791467810461466624/CYQu8WAM_200x200.jpg",
+        "#xbox-ryousuke0704":
+          "https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW8ke8ralOdP9BGd4wzwl0MKiS_22MVIPEwJP9TvepJ8uvpljwlaOqpr7r5iffC.z25Jbxozf7tHYe8zL9YIErtpoX0T_OBsUz2XNs.smQtZPqRY79A8AvC4hYjS.Y1thrH5ltVbv0So0fV9zg_hS90Xdg9B.EnUBcBa.l0snPAcS&format=jpg&h=64&w=64",
+        "#xbox-i14a":
+          "https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW3apWESZjav65Yncai8aRmWL5wD_dXiCeIhr2I61i4BQuu5DlEJ8AiopIHe7tpv.DSODD.gI5v28QP__46Y8X.cHT9906ZAwekXyHE1z4oBnnHf4u1M5BoC02Ak2SBKdEDq4mpRiCpCHvwUoAeA88FmFCVdUhWOcXSqdDwxjVmBx&format=jpg&h=64&w=64",
+        "#bsky-070ry_pages_dev":
+          "https://cdn.bsky.app/img/avatar/plain/did:plc:w3ftx3o4su3pcoivy7whdo64/bafkreifeaju6nvzn2ofgve6cqkawzyuz63zjgzzjdoj47q6y5tjil6pv4i@jpeg",
+        "#bsky-i14a":
+          "https://cdn.bsky.app/img/avatar/plain/did:plc:uhpbvhauaig5dwh6d6crgzaj/bafkreievol3k26szg56jomhh7epq7mc4p6wtyo3hfzhfna6zzfaarrljpy@jpeg",
+        "#bsky-onews":
+          "https://cdn.bsky.app/img/avatar/plain/did:plc:zasr6l2ni6yem7opyo4qgy2l/bafkreib4j2kx4gjnv6aaa4letvjkparueqmmsdj2pax4aztygeau7tznd4@jpeg",
+        "#bsky-i14a-dsc":
+          "https://cdn.bsky.app/img/avatar/plain/did:plc:snj5oumdkkj26qkr6tvltvpt/bafkreichckzjuqn6bt7kwyryup65645ncpij36mszc3zijhokft3a6zzta@jpeg",
+        "#bsky-sakayanagialice":
+          "https://cdn.bsky.app/img/avatar/plain/did:plc:jrqion5xefggm2grpj4an34h/bafkreiai2ajrbofnvoizhdgkg4ooicpp5d2mxdfr32wu7eywc6zpkblqfe@jpeg",
+      };
+      window.addEventListener("DOMContentLoaded", () => {
+        for (const [key, value] of Object.entries(icons)) {
+          modAttribute(key, "src", value);
+        }
+      });
+      function modAttribute(elm, key, val) {
+        const e = document.querySelector(elm);
+        if (!e) return;
+        e.setAttribute(key, val);
+      }
+    </script>
   </head>
   <body>
     <mdui-top-app-bar>
@@ -89,80 +126,46 @@
           placement="bottom"
           headline="Github"
           content="070ry"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://avatars.githubusercontent.com/u/68803331"
-          ></mdui-avatar>
+          ><mdui-avatar id="gh-070ry" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="Discord"
           content="@i14a"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://cdn.discordapp.com/avatars/1072283404722257950/9cd21239971c4b0cdcb7870d8b357712.png?size=128"
-          ></mdui-avatar>
+          ><mdui-avatar id="dsc-i14a" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="Discord"
           content="@070ry"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://images-ext-1.discordapp.net/external/wocLi41Dh5UOqETb-P3WXxP4INl5YKb8gTVmqi9-wRI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/880410653058289685/069c9b504766fbd51727d4d61b8b4a12.png?format=webp&quality=lossless&width=64&height=64"
-          ></mdui-avatar>
+          ><mdui-avatar id="dsc-070ry" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="Discord"
           content="@sakayanagialice"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://cdn.discordapp.com/avatars/649922410103046145/1943d543530ae1e5ae2b39821952bd4a.webp?size=64"
-          ></mdui-avatar>
+        >
+          <mdui-avatar id="dsc-sakayanagialice" loading="lazy" src="">
+          </mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="X(formerly Twitter)"
           content="@1u0704"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://pbs.twimg.com/profile_images/1791467810461466624/CYQu8WAM_200x200.jpg"
-          ></mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Guilded"
-          content="/u/I14A"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://cdn.gilcdn.com/UserAvatar/9d964e4b4e17e58c042633071937fd60-Small.webp"
-          ></mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Misskey"
-          content="@I14A@misskey.io"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://proxy.misskeyusercontent.jp/avatar.webp?url=https%3A%2F%2Fmedia.misskeyusercontent.jp%2Fmisskey%2Feb514b1a-6005-4b39-9a3a-6ece4afcb748.png&avatar=1"
-          ></mdui-avatar>
+          ><mdui-avatar id="x-1u0704" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="Xbox"
           content="ryousuke0704"
-          ><mdui-avatar
-            loading="lazy"
-            src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW8ke8ralOdP9BGd4wzwl0MKiS_22MVIPEwJP9TvepJ8uvpljwlaOqpr7r5iffC.z25Jbxozf7tHYe8zL9YIErtpoX0T_OBsUz2XNs.smQtZPqRY79A8AvC4hYjS.Y1thrH5ltVbv0So0fV9zg_hS90Xdg9B.EnUBcBa.l0snPAcS&format=jpg&h=64&w=64"
-          ></mdui-avatar>
+        >
+          <mdui-avatar id="xbox-ryousuke0704" loading="lazy" src="">
+          </mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
@@ -170,21 +173,43 @@
           headline="Xbox"
           content="I14A"
         >
-          <mdui-avatar
-            loading="lazy"
-            src="https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW3apWESZjav65Yncai8aRmWL5wD_dXiCeIhr2I61i4BQuu5DlEJ8AiopIHe7tpv.DSODD.gI5v28QP__46Y8X.cHT9906ZAwekXyHE1z4oBnnHf4u1M5BoC02Ak2SBKdEDq4mpRiCpCHvwUoAeA88FmFCVdUhWOcXSqdDwxjVmBx&format=jpg&h=64&w=64"
-          ></mdui-avatar>
+          <mdui-avatar id="xbox-i14a" loading="lazy" src=""></mdui-avatar>
+        </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="BlueSky"
           content="@070ry.pages.dev"
         >
-          <mdui-avatar
-            loading="lazy"
-            src="https://cdn.bsky.app/img/avatar/plain/did:plc:w3ftx3o4su3pcoivy7whdo64/bafkreifeaju6nvzn2ofgve6cqkawzyuz63zjgzzjdoj47q6y5tjil6pv4i@jpeg"
-          ></mdui-avatar>
+          <mdui-avatar id="bsky-070ry_pages_dev" loading="lazy" src="">
+          </mdui-avatar>
         </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="BlueSky"
+          content="@.bsky.app"
+        >
+          <mdui-avatar id="bsky-i14a-dsc" loading="lazy" src=""> </mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="BlueSky"
+          content="@.bsky.app"
+        >
+          <mdui-avatar id="bsky-onews" loading="lazy" src=""> </mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip
+          variant="rich"
+          placement="bottom"
+          headline="BlueSky"
+          content="@sakayanagialice.bsky.app"
+        >
+          <mdui-avatar id="bsky-sakayanagialice" loading="lazy" src="">
+          </mdui-avatar>
+        </mdui-tooltip>
+
         <h1>Using Devices</h1>
         <p>Sharp BASIO(au)(broken)</p>
         <p>Sharp AQUOS SH-M02(Softbank)(broken)</p>
