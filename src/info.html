@@ -7,22 +7,16 @@
     <meta property="og:title" content="Info - I14A Website" />
     <meta property="og:site_name" content="I14A Website" />
     <meta property="og:url" content="https://070ry-hp.pages.dev/info" />
-    <meta
-      property="og:image"
-      content="https://070ry-hp.pages.dev/assets/icon.png"
-    />
+    <meta property="og:image" content="https://070ry-hp.pages.dev/assets/icon.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@1u0704" />
     <meta name="twitter:creator" content="@1u0704" />
     <meta name="twitter:card" content="app" />
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script>
-      mdui.setColorScheme("#FF8C00");
+      mdui.setColorScheme('#FF8C00');
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,14 +28,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
       rel="stylesheet"
@@ -50,33 +38,21 @@
     <script src="nav.js"></script>
     <script>
       const icons = {
-        "#dsc-i14a":
-          "/assets/dsc.png",
-        "#gh-070ry": "https://avatars.githubusercontent.com/u/68803331",
-        "#dsc-070ry":
-          "/assets/dsc.png",
-        "#dsc-sakayanagialice":
-          "https://cdn.discordapp.com/avatars/649922410103046145/1943d543530ae1e5ae2b39821952bd4a.webp?size=64",
-        "#x-1u0704":
-          "https://pbs.twimg.com/profile_images/1791467810461466624/CYQu8WAM_200x200.jpg",
-        "#xbox-ryousuke0704":
-          "https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW8ke8ralOdP9BGd4wzwl0MKiS_22MVIPEwJP9TvepJ8uvpljwlaOqpr7r5iffC.z25Jbxozf7tHYe8zL9YIErtpoX0T_OBsUz2XNs.smQtZPqRY79A8AvC4hYjS.Y1thrH5ltVbv0So0fV9zg_hS90Xdg9B.EnUBcBa.l0snPAcS&format=jpg&h=64&w=64",
-        "#xbox-i14a":
-          "https://images-eds-ssl.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW3apWESZjav65Yncai8aRmWL5wD_dXiCeIhr2I61i4BQuu5DlEJ8AiopIHe7tpv.DSODD.gI5v28QP__46Y8X.cHT9906ZAwekXyHE1z4oBnnHf4u1M5BoC02Ak2SBKdEDq4mpRiCpCHvwUoAeA88FmFCVdUhWOcXSqdDwxjVmBx&format=jpg&h=64&w=64",
-        "#bsky-070ry_pages_dev":
-          "https://cdn.bsky.app/img/avatar/plain/did:plc:w3ftx3o4su3pcoivy7whdo64/bafkreifeaju6nvzn2ofgve6cqkawzyuz63zjgzzjdoj47q6y5tjil6pv4i@jpeg",
-        "#bsky-i14a":
-          "https://cdn.bsky.app/img/avatar/plain/did:plc:uhpbvhauaig5dwh6d6crgzaj/bafkreievol3k26szg56jomhh7epq7mc4p6wtyo3hfzhfna6zzfaarrljpy@jpeg",
-        "#bsky-onews":
-          "https://cdn.bsky.app/img/avatar/plain/did:plc:zasr6l2ni6yem7opyo4qgy2l/bafkreib4j2kx4gjnv6aaa4letvjkparueqmmsdj2pax4aztygeau7tznd4@jpeg",
-        "#bsky-i14a-dsc":
-          "https://cdn.bsky.app/img/avatar/plain/did:plc:snj5oumdkkj26qkr6tvltvpt/bafkreichckzjuqn6bt7kwyryup65645ncpij36mszc3zijhokft3a6zzta@jpeg",
-        "#bsky-sakayanagialice":
-          "https://cdn.bsky.app/img/avatar/plain/did:plc:jrqion5xefggm2grpj4an34h/bafkreiai2ajrbofnvoizhdgkg4ooicpp5d2mxdfr32wu7eywc6zpkblqfe@jpeg",
+        '#dsc-i14a': '/assets/dsc.png',
+        '#gh-070ry': '/assets/gh.png',
+        '#dsc-070ry': '/assets/dsc.png',
+        '#dsc-sakayanagialice': '/assets/dsc.png',
+        '#x-1u0704': '/assets/x.jpg',
+        '#xbox-ryousuke0704': '/assets/xbox1.jpg',
+        '#xbox-i14a': '/assets/xbox2.jpg',
+        '#bsky1': '/assets/bsky1.jpg',
+        '#bsky2': '/assets/bsky2.jpg',
+        '#bsky3': '/assets/bsky3.jpg',
+        '#bsky4': '/assets/bsky4.jpg',
       };
-      window.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener('DOMContentLoaded', () => {
         for (const [key, value] of Object.entries(icons)) {
-          modAttribute(key, "src", value);
+          modAttribute(key, 'src', value);
         }
       });
       function modAttribute(elm, key, val) {
@@ -91,14 +67,8 @@
       <mdui-button-icon id="menu" icon="menu"></mdui-button-icon>
       <mdui-top-app-bar-title>Homepage</mdui-top-app-bar-title>
       <div style="flex-grow: 1"></div>
-      <mdui-tooltip
-        variant="rich"
-        content="お兄ちゃんはおしまい!"
-        placement="bottom-left"
-        ><mdui-button-icon
-          id="transgender"
-          icon="transgender"
-        ></mdui-button-icon>
+      <mdui-tooltip variant="rich" content="お兄ちゃんはおしまい!" placement="bottom-left"
+        ><mdui-button-icon id="transgender" icon="transgender"></mdui-button-icon>
       </mdui-tooltip>
     </mdui-top-app-bar>
 
@@ -121,28 +91,13 @@
     <mdui-layout>
       <mdui-layout-main>
         <h1>Profiles</h1>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Github"
-          content="070ry"
-          ><mdui-avatar id="gh-070ry" loading="lazy" src=""></mdui-avatar>
+        <mdui-tooltip variant="rich" placement="bottom" headline="Github" content="070ry"
           ><mdui-avatar id="gh-070ry" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Discord"
-          content="@i14a"
-          ><mdui-avatar id="dsc-i14a" loading="lazy" src=""></mdui-avatar>
+        <mdui-tooltip variant="rich" placement="bottom" headline="Discord" content="@i14a"
           ><mdui-avatar id="dsc-i14a" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Discord"
-          content="@070ry"
-          ><mdui-avatar id="dsc-070ry" loading="lazy" src=""></mdui-avatar>
+        <mdui-tooltip variant="rich" placement="bottom" headline="Discord" content="@070ry"
           ><mdui-avatar id="dsc-070ry" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
@@ -151,11 +106,7 @@
           headline="Discord"
           content="@sakayanagialice"
         >
-          <mdui-avatar id="dsc-sakayanagialice" loading="lazy" src="">
-          </mdui-avatar>
-        >
-          <mdui-avatar id="dsc-sakayanagialice" loading="lazy" src="">
-          </mdui-avatar>
+          <mdui-avatar id="dsc-sakayanagialice" loading="lazy" src=""> </mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
@@ -163,92 +114,35 @@
           headline="X(formerly Twitter)"
           content="@1u0704"
           ><mdui-avatar id="x-1u0704" loading="lazy" src=""></mdui-avatar>
-          ><mdui-avatar id="x-1u0704" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Xbox"
-          content="ryousuke0704"
-        >
-          <mdui-avatar id="xbox-ryousuke0704" loading="lazy" src="">
-          </mdui-avatar>
-        >
-          <mdui-avatar id="xbox-ryousuke0704" loading="lazy" src="">
-          </mdui-avatar>
+        <mdui-tooltip variant="rich" placement="bottom" headline="Xbox" content="ryousuke0704">
+          <mdui-avatar id="xbox-ryousuke0704" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="Xbox"
-          content="I14A"
-        >
-          <mdui-avatar id="xbox-i14a" loading="lazy" src=""></mdui-avatar>
-        </mdui-tooltip>
+        <mdui-tooltip variant="rich" placement="bottom" headline="Xbox" content="I14A">
           <mdui-avatar id="xbox-i14a" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="BlueSky"
-          content="@070ry.pages.dev"
+          content="070ry.pages.dev"
         >
-          <mdui-avatar id="bsky-070ry_pages_dev" loading="lazy" src="">
-          </mdui-avatar>
+          <mdui-avatar id="bsky1" loading="lazy" src=""></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich" placement="bottom" headline="BlueSky" content="i14a.bsky.app">
+          <mdui-avatar id="bsky2" loading="lazy" src=""></mdui-avatar>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich" placement="bottom" headline="BlueSky" content="onews.bsky.app">
+          <mdui-avatar id="bsky3" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
         <mdui-tooltip
           variant="rich"
           placement="bottom"
           headline="BlueSky"
-          content="@.bsky.app"
+          content="i14a-dsc.bsky.app"
         >
-          <mdui-avatar id="bsky-i14a-dsc" loading="lazy" src=""> </mdui-avatar>
+          <mdui-avatar id="bsky4" loading="lazy" src=""></mdui-avatar>
         </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="BlueSky"
-          content="@.bsky.app"
-        >
-          <mdui-avatar id="bsky-onews" loading="lazy" src=""> </mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="BlueSky"
-          content="@sakayanagialice.bsky.app"
-        >
-          <mdui-avatar id="bsky-sakayanagialice" loading="lazy" src="">
-          </mdui-avatar>
-          <mdui-avatar id="bsky-070ry_pages_dev" loading="lazy" src="">
-          </mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="BlueSky"
-          content="@.bsky.app"
-        >
-          <mdui-avatar id="bsky-i14a-dsc" loading="lazy" src=""> </mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="BlueSky"
-          content="@.bsky.app"
-        >
-          <mdui-avatar id="bsky-onews" loading="lazy" src=""> </mdui-avatar>
-        </mdui-tooltip>
-        <mdui-tooltip
-          variant="rich"
-          placement="bottom"
-          headline="BlueSky"
-          content="@sakayanagialice.bsky.app"
-        >
-          <mdui-avatar id="bsky-sakayanagialice" loading="lazy" src="">
-          </mdui-avatar>
-        </mdui-tooltip>
-
 
         <h1>Using Devices</h1>
         <p>Sharp BASIO(au)(broken)</p>
@@ -284,9 +178,7 @@
       <mdui-navigation-bar-item href="/" icon="home" value="home" select>
         Home
       </mdui-navigation-bar-item>
-      <mdui-navigation-bar-item icon="person" value="info">
-        Info
-      </mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="person" value="info"> Info </mdui-navigation-bar-item>
       <mdui-navigation-bar-item href="/link" icon="link" value="link">
         Link
       </mdui-navigation-bar-item>
