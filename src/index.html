@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="mdui-theme-auto" prefix="og: https://ogp.me/ns#" lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -7,23 +7,17 @@
     <meta property="og:title" content="I14A Website" />
     <meta property="og:site_name" content="I14A Website" />
     <meta property="og:url" content="https://070ry-hp.pages.dev/" />
-    <meta
-      property="og:image"
-      content="https://070ry-hp.pages.dev/assets/icon.png"
-    />
+    <meta property="og:image" content="https://070ry-hp.pages.dev/assets/img/icon.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@1u0704" />
     <meta name="twitter:creator" content="@1u0704" />
     <meta name="twitter:card" content="app" />
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <script>
-      mdui.setColorScheme("#FF8C00");
+      mdui.setColorScheme('#FF8C00');
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,21 +29,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=3" />
-    <script src="index.js"></script>
-    <script src="nav.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=4" />
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/nav.js"></script>
     <style>
       mdui-button#dialog-close {
         margin-top: 16px;
@@ -61,15 +49,8 @@
       <mdui-button-icon id="menu" icon="menu"></mdui-button-icon>
       <mdui-top-app-bar-title>Homepage</mdui-top-app-bar-title>
       <div style="flex-grow: 1"></div>
-      <mdui-tooltip
-        variant="rich"
-        content="お兄ちゃんはおしまい!"
-        placement="bottom-left"
-      >
-        <mdui-button-icon
-          id="transgender"
-          icon="transgender"
-        ></mdui-button-icon>
+      <mdui-tooltip variant="rich" content="お兄ちゃんはおしまい!" placement="bottom-left">
+        <mdui-button-icon id="transgender" icon="transgender"></mdui-button-icon>
       </mdui-tooltip>
     </mdui-top-app-bar>
     <mdui-navigation-drawer
@@ -77,7 +58,6 @@
       id="drawer"
       close-on-esc
       close-on-overlay-click
-      contained
       modal
     >
       <h1>Drawer</h1>
@@ -100,20 +80,14 @@
           label="Input"
           placeholder="Type here and hit enter to search"
         ></mdui-text-field>
-        <mdui-tooltip
-          variant="rich"
-          headline="Powered by Google"
-          placement="bottom"
-        >
+        <mdui-tooltip variant="rich" headline="Powered by Google" placement="bottom">
           <mdui-button id="search-button" icon="search">SEARCH</mdui-button>
         </mdui-tooltip>
         <mdui-button id="fullscreen" icon="fullscreen">FULLSCREEN</mdui-button>
       </mdui-layout-main>
     </mdui-layout>
     <mdui-navigation-bar value="home">
-      <mdui-navigation-bar-item icon="home" value="home" select>
-        Home
-      </mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="home" value="home" select> Home </mdui-navigation-bar-item>
       <mdui-navigation-bar-item href="/info" icon="person" value="info">
         Info
       </mdui-navigation-bar-item>
