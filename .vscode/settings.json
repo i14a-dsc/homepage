@@ -1,4 +1,6 @@
 {
   "liveSassCompile.settings.watchOnLaunch": true,
-  "liveSassCompile.settings.generateMap": false
+  "liveSassCompile.settings.generateMap": false,
+  "livePreview.serverRoot": "./src",
+  "livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 1
 }

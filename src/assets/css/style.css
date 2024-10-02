@@ -59,8 +59,9 @@ h1 {
 
 mdui-navigation-bar {
   max-width: 640px;
-  padding: 0 auto;
+  padding: auto;
   margin: 0 auto;
+  z-index: 2501;
 }
 
 @media screen and (max-width: 479px) {
