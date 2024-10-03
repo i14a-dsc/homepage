@@ -19,6 +19,9 @@ mdui-icon {
   -moz-user-select: none;
 }
 
+#drawer {
+  z-index: 12000;
+}
 #drawer h1 {
   margin-top: 40px;
   margin-left: 16px;
