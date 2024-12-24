@@ -12,6 +12,14 @@ mdui-button {
   margin-bottom: 16px;
 }
 
+mdui-tooltip {
+  pointer-events: none;
+}
+
+mdui-tooltip > * {
+  pointer-events: all;
+}
+
 mdui-icon {
   user-select: none;
   -webkit-user-select: none;
